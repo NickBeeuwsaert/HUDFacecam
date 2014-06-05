@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01F8BB021941289100B6A2BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB011941289100B6A2BE /* Cocoa.framework */; };
+		01F8BB0C1941289100B6A2BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB0A1941289100B6A2BE /* InfoPlist.strings */; };
+		01F8BB0E1941289100B6A2BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB0D1941289100B6A2BE /* main.m */; };
+		01F8BB121941289100B6A2BE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB101941289100B6A2BE /* Credits.rtf */; };
+		01F8BB151941289100B6A2BE /* RZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB141941289100B6A2BE /* RZAppDelegate.m */; };
+		01F8BB181941289100B6A2BE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB161941289100B6A2BE /* MainMenu.xib */; };
+		01F8BB1A1941289100B6A2BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB191941289100B6A2BE /* Images.xcassets */; };
+		01F8BB211941289100B6A2BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB201941289100B6A2BE /* XCTest.framework */; };
+		01F8BB221941289100B6A2BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB011941289100B6A2BE /* Cocoa.framework */; };
+		01F8BB2A1941289100B6A2BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB281941289100B6A2BE /* InfoPlist.strings */; };
+		01F8BB2C1941289100B6A2BE /* HUDFacecamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB2B1941289100B6A2BE /* HUDFacecamTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01F8BB231941289100B6A2BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01F8BAF61941289000B6A2BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01F8BAFD1941289100B6A2BE;
+			remoteInfo = HUDFacecam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F8BAFE1941289100B6A2BE /* HUDFacecam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUDFacecam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F8BB011941289100B6A2BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		01F8BB041941289100B6A2BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		01F8BB051941289100B6A2BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		01F8BB061941289100B6A2BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01F8BB091941289100B6A2BE /* HUDFacecam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HUDFacecam-Info.plist"; sourceTree = "<group>"; };
+		01F8BB0B1941289100B6A2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01F8BB0D1941289100B6A2BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01F8BB0F1941289100B6A2BE /* HUDFacecam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HUDFacecam-Prefix.pch"; sourceTree = "<group>"; };
+		01F8BB111941289100B6A2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		01F8BB131941289100B6A2BE /* RZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZAppDelegate.h; sourceTree = "<group>"; };
+		01F8BB141941289100B6A2BE /* RZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZAppDelegate.m; sourceTree = "<group>"; };
+		01F8BB171941289100B6A2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		01F8BB191941289100B6A2BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01F8BB1F1941289100B6A2BE /* HUDFacecamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HUDFacecamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F8BB201941289100B6A2BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		01F8BB271941289100B6A2BE /* HUDFacecamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HUDFacecamTests-Info.plist"; sourceTree = "<group>"; };
+		01F8BB291941289100B6A2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01F8BB2B1941289100B6A2BE /* HUDFacecamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDFacecamTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01F8BAFB1941289100B6A2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB021941289100B6A2BE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F8BB1C1941289100B6A2BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB221941289100B6A2BE /* Cocoa.framework in Frameworks */,
+				01F8BB211941289100B6A2BE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F8BAF51941289000B6A2BE = {
+			isa = PBXGroup;
+			children = (
+				01F8BB071941289100B6A2BE /* HUDFacecam */,
+				01F8BB251941289100B6A2BE /* HUDFacecamTests */,
+				01F8BB001941289100B6A2BE /* Frameworks */,
+				01F8BAFF1941289100B6A2BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01F8BAFF1941289100B6A2BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BAFE1941289100B6A2BE /* HUDFacecam.app */,
+				01F8BB1F1941289100B6A2BE /* HUDFacecamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01F8BB001941289100B6A2BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB011941289100B6A2BE /* Cocoa.framework */,
+				01F8BB201941289100B6A2BE /* XCTest.framework */,
+				01F8BB031941289100B6A2BE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01F8BB031941289100B6A2BE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB041941289100B6A2BE /* AppKit.framework */,
+				01F8BB051941289100B6A2BE /* CoreData.framework */,
+				01F8BB061941289100B6A2BE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		01F8BB071941289100B6A2BE /* HUDFacecam */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB131941289100B6A2BE /* RZAppDelegate.h */,
+				01F8BB141941289100B6A2BE /* RZAppDelegate.m */,
+				01F8BB161941289100B6A2BE /* MainMenu.xib */,
+				01F8BB191941289100B6A2BE /* Images.xcassets */,
+				01F8BB081941289100B6A2BE /* Supporting Files */,
+			);
+			path = HUDFacecam;
+			sourceTree = "<group>";
+		};
+		01F8BB081941289100B6A2BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB091941289100B6A2BE /* HUDFacecam-Info.plist */,
+				01F8BB0A1941289100B6A2BE /* InfoPlist.strings */,
+				01F8BB0D1941289100B6A2BE /* main.m */,
+				01F8BB0F1941289100B6A2BE /* HUDFacecam-Prefix.pch */,
+				01F8BB101941289100B6A2BE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01F8BB251941289100B6A2BE /* HUDFacecamTests */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB2B1941289100B6A2BE /* HUDFacecamTests.m */,
+				01F8BB261941289100B6A2BE /* Supporting Files */,
+			);
+			path = HUDFacecamTests;
+			sourceTree = "<group>";
+		};
+		01F8BB261941289100B6A2BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01F8BB271941289100B6A2BE /* HUDFacecamTests-Info.plist */,
+				01F8BB281941289100B6A2BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01F8BAFD1941289100B6A2BE /* HUDFacecam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F8BB2F1941289100B6A2BE /* Build configuration list for PBXNativeTarget "HUDFacecam" */;
+			buildPhases = (
+				01F8BAFA1941289100B6A2BE /* Sources */,
+				01F8BAFB1941289100B6A2BE /* Frameworks */,
+				01F8BAFC1941289100B6A2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUDFacecam;
+			productName = HUDFacecam;
+			productReference = 01F8BAFE1941289100B6A2BE /* HUDFacecam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01F8BB1E1941289100B6A2BE /* HUDFacecamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01F8BB321941289100B6A2BE /* Build configuration list for PBXNativeTarget "HUDFacecamTests" */;
+			buildPhases = (
+				01F8BB1B1941289100B6A2BE /* Sources */,
+				01F8BB1C1941289100B6A2BE /* Frameworks */,
+				01F8BB1D1941289100B6A2BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01F8BB241941289100B6A2BE /* PBXTargetDependency */,
+			);
+			name = HUDFacecamTests;
+			productName = HUDFacecamTests;
+			productReference = 01F8BB1F1941289100B6A2BE /* HUDFacecamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01F8BAF61941289000B6A2BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RZ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nick Beeuwsaert";
+				TargetAttributes = {
+					01F8BB1E1941289100B6A2BE = {
+						TestTargetID = 01F8BAFD1941289100B6A2BE;
+					};
+				};
+			};
+			buildConfigurationList = 01F8BAF91941289000B6A2BE /* Build configuration list for PBXProject "HUDFacecam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01F8BAF51941289000B6A2BE;
+			productRefGroup = 01F8BAFF1941289100B6A2BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01F8BAFD1941289100B6A2BE /* HUDFacecam */,
+				01F8BB1E1941289100B6A2BE /* HUDFacecamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01F8BAFC1941289100B6A2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB0C1941289100B6A2BE /* InfoPlist.strings in Resources */,
+				01F8BB1A1941289100B6A2BE /* Images.xcassets in Resources */,
+				01F8BB121941289100B6A2BE /* Credits.rtf in Resources */,
+				01F8BB181941289100B6A2BE /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F8BB1D1941289100B6A2BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB2A1941289100B6A2BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01F8BAFA1941289100B6A2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB151941289100B6A2BE /* RZAppDelegate.m in Sources */,
+				01F8BB0E1941289100B6A2BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01F8BB1B1941289100B6A2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F8BB2C1941289100B6A2BE /* HUDFacecamTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01F8BB241941289100B6A2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01F8BAFD1941289100B6A2BE /* HUDFacecam */;
+			targetProxy = 01F8BB231941289100B6A2BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01F8BB0A1941289100B6A2BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F8BB0B1941289100B6A2BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01F8BB101941289100B6A2BE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F8BB111941289100B6A2BE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		01F8BB161941289100B6A2BE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F8BB171941289100B6A2BE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		01F8BB281941289100B6A2BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01F8BB291941289100B6A2BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01F8BB2D1941289100B6A2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01F8BB2E1941289100B6A2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01F8BB301941289100B6A2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HUDFacecam/HUDFacecam-Prefix.pch";
+				INFOPLIST_FILE = "HUDFacecam/HUDFacecam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01F8BB311941289100B6A2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HUDFacecam/HUDFacecam-Prefix.pch";
+				INFOPLIST_FILE = "HUDFacecam/HUDFacecam-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		01F8BB331941289100B6A2BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HUDFacecam.app/Contents/MacOS/HUDFacecam";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HUDFacecam/HUDFacecam-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HUDFacecamTests/HUDFacecamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		01F8BB341941289100B6A2BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HUDFacecam.app/Contents/MacOS/HUDFacecam";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HUDFacecam/HUDFacecam-Prefix.pch";
+				INFOPLIST_FILE = "HUDFacecamTests/HUDFacecamTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01F8BAF91941289000B6A2BE /* Build configuration list for PBXProject "HUDFacecam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F8BB2D1941289100B6A2BE /* Debug */,
+				01F8BB2E1941289100B6A2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01F8BB2F1941289100B6A2BE /* Build configuration list for PBXNativeTarget "HUDFacecam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F8BB301941289100B6A2BE /* Debug */,
+				01F8BB311941289100B6A2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01F8BB321941289100B6A2BE /* Build configuration list for PBXNativeTarget "HUDFacecamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01F8BB331941289100B6A2BE /* Debug */,
+				01F8BB341941289100B6A2BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01F8BAF61941289000B6A2BE /* Project object */;
+}
