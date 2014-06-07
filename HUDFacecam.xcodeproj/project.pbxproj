@@ -18,6 +18,8 @@
 		01F8BB221941289100B6A2BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB011941289100B6A2BE /* Cocoa.framework */; };
 		01F8BB2A1941289100B6A2BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB281941289100B6A2BE /* InfoPlist.strings */; };
 		01F8BB2C1941289100B6A2BE /* HUDFacecamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB2B1941289100B6A2BE /* HUDFacecamTests.m */; };
+		01F8BB3919412B3A00B6A2BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB3819412B3A00B6A2BE /* AVFoundation.framework */; };
+		01F8BB3C19412C1400B6A2BE /* RZCamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB3B19412C1400B6A2BE /* RZCamView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		01F8BB271941289100B6A2BE /* HUDFacecamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HUDFacecamTests-Info.plist"; sourceTree = "<group>"; };
 		01F8BB291941289100B6A2BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		01F8BB2B1941289100B6A2BE /* HUDFacecamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDFacecamTests.m; sourceTree = "<group>"; };
+		01F8BB3819412B3A00B6A2BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		01F8BB3A19412C1400B6A2BE /* RZCamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZCamView.h; sourceTree = "<group>"; };
+		01F8BB3B19412C1400B6A2BE /* RZCamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZCamView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F8BB3919412B3A00B6A2BE /* AVFoundation.framework in Frameworks */,
 				01F8BB021941289100B6A2BE /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +101,7 @@
 		01F8BB001941289100B6A2BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01F8BB3819412B3A00B6A2BE /* AVFoundation.framework */,
 				01F8BB011941289100B6A2BE /* Cocoa.framework */,
 				01F8BB201941289100B6A2BE /* XCTest.framework */,
 				01F8BB031941289100B6A2BE /* Other Frameworks */,
@@ -118,6 +125,8 @@
 				01F8BB131941289100B6A2BE /* RZAppDelegate.h */,
 				01F8BB141941289100B6A2BE /* RZAppDelegate.m */,
 				01F8BB161941289100B6A2BE /* MainMenu.xib */,
+				01F8BB3A19412C1400B6A2BE /* RZCamView.h */,
+				01F8BB3B19412C1400B6A2BE /* RZCamView.m */,
 				01F8BB191941289100B6A2BE /* Images.xcassets */,
 				01F8BB081941289100B6A2BE /* Supporting Files */,
 			);
@@ -255,6 +264,7 @@
 			files = (
 				01F8BB151941289100B6A2BE /* RZAppDelegate.m in Sources */,
 				01F8BB0E1941289100B6A2BE /* main.m in Sources */,
+				01F8BB3C19412C1400B6A2BE /* RZCamView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +477,7 @@
 				01F8BB311941289100B6A2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01F8BB321941289100B6A2BE /* Build configuration list for PBXNativeTarget "HUDFacecamTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +486,7 @@
 				01F8BB341941289100B6A2BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
