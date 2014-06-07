@@ -691,9 +691,9 @@
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6u0-0W-FIN">
                                         <rect key="frame" x="20" y="19" width="440" height="19"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundRect" title="Stop Audio" alternateTitle="Start Audio" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xNT-V6-3ef">
+                                        <buttonCell key="cell" type="roundRect" title="Start Audio" alternateTitle="Stop Audio" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xNT-V6-3ef">
                                             <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="controlContent"/>
+                                            <font key="font" metaFont="cellTitle"/>
                                         </buttonCell>
                                         <connections>
                                             <action selector="toggleAudio:" target="Voe-Tx-rLC" id="gMe-Wh-qyi"/>
