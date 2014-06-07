@@ -45,7 +45,7 @@
         [audioLoopbackSession addOutput:audioOut];
     }
     //NSLog(@"%d", [[self window] contentView] setAspect)
-    [self startAudio];
+    //[self startAudio];
     
     //Hurray for reading the documentation!
     [[self window] setContentAspectRatio:[[self camOutput] previewSize]];
