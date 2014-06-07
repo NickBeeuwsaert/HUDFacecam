@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5023"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -13,6 +13,9 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="RZAppDelegate">
             <connections>
+                <outlet property="audioButton" destination="6u0-0W-FIN" id="4OI-3N-oH5"/>
+                <outlet property="camOutput" destination="2lL-SB-7jH" id="Ydq-ef-sdn"/>
+                <outlet property="settingsOverlay" destination="f6Y-5I-Pob" id="uhQ-dc-WOO"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -666,15 +669,62 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="HUDFacecam" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="HUD!" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES" HUD="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" moveToActiveSpace="YES" stationary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="contentRect" x="471" y="253" width="480" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="100" height="75"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView autoresizesSubviews="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-SB-7jH" customClass="RZCamView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <customView alphaValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="f6Y-5I-Pob" userLabel="Settings">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6u0-0W-FIN">
+                                        <rect key="frame" x="20" y="19" width="440" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundRect" title="Stop Audio" alternateTitle="Start Audio" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xNT-V6-3ef">
+                                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="controlContent"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="toggleAudio:" target="Voe-Tx-rLC" id="gMe-Wh-qyi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6u0-0W-FIN" firstAttribute="leading" secondItem="f6Y-5I-Pob" secondAttribute="leading" constant="20" id="oeI-pr-xV1"/>
+                                    <constraint firstAttribute="trailing" secondItem="6u0-0W-FIN" secondAttribute="trailing" constant="20" id="ugi-yC-amA"/>
+                                    <constraint firstAttribute="bottom" secondItem="6u0-0W-FIN" secondAttribute="bottom" constant="20" id="wv6-T2-TUc"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="f6Y-5I-Pob" firstAttribute="top" secondItem="2lL-SB-7jH" secondAttribute="top" id="M14-Cw-RNZ"/>
+                            <constraint firstItem="f6Y-5I-Pob" firstAttribute="leading" secondItem="2lL-SB-7jH" secondAttribute="leading" id="MeU-vV-B4x"/>
+                            <constraint firstAttribute="trailing" secondItem="f6Y-5I-Pob" secondAttribute="trailing" id="NMu-0B-76U"/>
+                            <constraint firstAttribute="bottom" secondItem="f6Y-5I-Pob" secondAttribute="bottom" id="fsZ-Oh-Nbw"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2lL-SB-7jH" secondAttribute="bottom" id="5W3-bN-BrX"/>
+                    <constraint firstItem="2lL-SB-7jH" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="Rnf-U2-AXC"/>
+                    <constraint firstAttribute="trailing" secondItem="2lL-SB-7jH" secondAttribute="trailing" id="fh0-8F-YXF"/>
+                    <constraint firstItem="2lL-SB-7jH" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="h5p-bL-VV1"/>
+                </constraints>
             </view>
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="mXy-IO-eW1"/>
+            </connections>
         </window>
     </objects>
 </document>

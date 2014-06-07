@@ -7,9 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
-
-@interface RZAppDelegate : NSObject <NSApplicationDelegate>
+#import <AVFoundation/AVFoundation.h>
+#import "RZCamView.h"
+@interface RZAppDelegate : NSObject <NSApplicationDelegate> {
+    AVCaptureSession *audioLoopbackSession;
+    
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet RZCamView *camOutput;
+@property (assign) IBOutlet NSView *settingsOverlay;
+@property (assign) IBOutlet NSPopUpButton *inputDevices;
+@property (assign) IBOutlet NSPopUpButton *outputDevices;
+@property (assign) IBOutlet NSButton *audioButton;
+
+- (IBAction)toggleAudio:(id)sender;
 
 @end
