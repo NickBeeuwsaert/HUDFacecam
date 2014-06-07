@@ -8,6 +8,9 @@
 
 #import "RZAppDelegate.h"
 
+#define WINDOW_WIDTH 480
+#define WINDOW_MIN_WIDTH 150
+
 @implementation RZAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -49,10 +52,11 @@
     
     //Hurray for reading the documentation!
     [[self window] setContentAspectRatio:[[self camOutput] previewSize]];
-    [[self window] setMinSize:NSMakeSize(200 * [[self camOutput] aspectRatio], 200)];
-
+    [[self window] setMinSize:NSMakeSize(WINDOW_MIN_WIDTH, WINDOW_MIN_WIDTH * [[self camOutput] aspectRatio])];
     
-    //[[self window]setOpaque:NO];
+
+    [[self window] setContentSize:NSMakeSize(WINDOW_WIDTH, WINDOW_WIDTH*[[self camOutput] aspectRatio])];
+
 }
 - (IBAction)toggleAudio:(id)sender {
     if([audioLoopbackSession isRunning]){
