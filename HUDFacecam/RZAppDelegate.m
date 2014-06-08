@@ -7,6 +7,7 @@
 //
 
 #import "RZAppDelegate.h"
+#import "RZDeviceListener.h"
 
 #define WINDOW_WIDTH 480
 #define WINDOW_MIN_WIDTH 250
@@ -61,6 +62,9 @@
     [[[self settingsOverlay] animator]setAlphaValue:0];
     /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(repopulateInputDevices:) name:AVCaptureDeviceWasConnectedNotification object:nil];
      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(repopulateInputDevices:) name:AVCaptureDeviceWasDisconnectedNotification object:nil];*/
+    //RZDeviceListener *deviceListener = [[RZDeviceListener alloc] init];
+    //[deviceListener setDelegate:self];
+    //[deviceListener test];
 }
 - (IBAction)toggleAudio:(id)sender {
     if([audioLoopbackSession isRunning]){

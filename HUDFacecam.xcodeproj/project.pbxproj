@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01CCE02219440065005AF565 /* RZDeviceListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CCE02119440065005AF565 /* RZDeviceListener.m */; };
 		01F8BB021941289100B6A2BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F8BB011941289100B6A2BE /* Cocoa.framework */; };
 		01F8BB0C1941289100B6A2BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01F8BB0A1941289100B6A2BE /* InfoPlist.strings */; };
 		01F8BB0E1941289100B6A2BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F8BB0D1941289100B6A2BE /* main.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01CCE02019440065005AF565 /* RZDeviceListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RZDeviceListener.h; sourceTree = "<group>"; };
+		01CCE02119440065005AF565 /* RZDeviceListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RZDeviceListener.m; sourceTree = "<group>"; };
 		01F8BAFE1941289100B6A2BE /* HUDFacecam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUDFacecam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F8BB011941289100B6A2BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		01F8BB041941289100B6A2BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 			children = (
 				01F8BB131941289100B6A2BE /* RZAppDelegate.h */,
 				01F8BB141941289100B6A2BE /* RZAppDelegate.m */,
+				01CCE02019440065005AF565 /* RZDeviceListener.h */,
+				01CCE02119440065005AF565 /* RZDeviceListener.m */,
 				01F8BB161941289100B6A2BE /* MainMenu.xib */,
 				01F8BB3A19412C1400B6A2BE /* RZCamView.h */,
 				01F8BB3B19412C1400B6A2BE /* RZCamView.m */,
@@ -265,6 +270,7 @@
 				01F8BB151941289100B6A2BE /* RZAppDelegate.m in Sources */,
 				01F8BB0E1941289100B6A2BE /* main.m in Sources */,
 				01F8BB3C19412C1400B6A2BE /* RZCamView.m in Sources */,
+				01CCE02219440065005AF565 /* RZDeviceListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
