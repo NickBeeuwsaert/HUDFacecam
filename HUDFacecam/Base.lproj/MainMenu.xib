@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="audioButton" destination="6u0-0W-FIN" id="4OI-3N-oH5"/>
                 <outlet property="camOutput" destination="2lL-SB-7jH" id="Ydq-ef-sdn"/>
+                <outlet property="inputDevices" destination="s7L-G6-aYB" id="ozc-mv-FM0"/>
                 <outlet property="settingsOverlay" destination="f6Y-5I-Pob" id="uhQ-dc-WOO"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -684,7 +685,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
-                            <customView alphaValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="f6Y-5I-Pob" userLabel="Settings">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="f6Y-5I-Pob" userLabel="Settings">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -699,8 +700,46 @@
                                             <action selector="toggleAudio:" target="Voe-Tx-rLC" id="gMe-Wh-qyi"/>
                                         </connections>
                                     </button>
+                                    <popUpButton hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s7L-G6-aYB">
+                                        <rect key="frame" x="18" y="55" width="221" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <popUpButtonCell key="cell" type="push" title="Input" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Dbi-tK-U2v" id="jod-OL-CMJ">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <menu key="menu" title="OtherViews" id="Ca4-re-smm">
+                                                <items>
+                                                    <menuItem title="Input" state="on" id="Dbi-tK-U2v">
+                                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                                    </menuItem>
+                                                    <menuItem title="Item 2" id="DdZ-lf-KFu"/>
+                                                    <menuItem title="Item 3" id="5Do-8k-iYH"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                    </popUpButton>
+                                    <popUpButton hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-85-UYk">
+                                        <rect key="frame" x="242" y="55" width="221" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <popUpButtonCell key="cell" type="push" title="Output" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="tkb-xF-Exk" id="JaO-bQ-0gI">
+                                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <menu key="menu" title="OtherViews" id="2ZG-gp-L9g">
+                                                <items>
+                                                    <menuItem title="Output" state="on" id="tkb-xF-Exk"/>
+                                                    <menuItem title="Item 2" id="ZvM-Ws-JRx"/>
+                                                    <menuItem title="Item 3" id="bc1-ft-oty"/>
+                                                </items>
+                                            </menu>
+                                        </popUpButtonCell>
+                                    </popUpButton>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Azp-85-UYk" firstAttribute="leading" secondItem="s7L-G6-aYB" secondAttribute="trailing" constant="8" id="4zK-ZV-m98"/>
+                                    <constraint firstItem="s7L-G6-aYB" firstAttribute="leading" secondItem="f6Y-5I-Pob" secondAttribute="leading" constant="20" id="BOZ-kg-VAL"/>
+                                    <constraint firstItem="6u0-0W-FIN" firstAttribute="top" secondItem="s7L-G6-aYB" secondAttribute="bottom" constant="20" id="JXh-Dj-0aZ"/>
+                                    <constraint firstItem="s7L-G6-aYB" firstAttribute="width" secondItem="Azp-85-UYk" secondAttribute="width" id="Lk0-FY-Nk5"/>
+                                    <constraint firstAttribute="trailing" secondItem="Azp-85-UYk" secondAttribute="trailing" constant="20" id="els-Dl-svw"/>
+                                    <constraint firstItem="6u0-0W-FIN" firstAttribute="top" secondItem="Azp-85-UYk" secondAttribute="bottom" constant="20" id="ho7-Po-Aaj"/>
                                     <constraint firstItem="6u0-0W-FIN" firstAttribute="leading" secondItem="f6Y-5I-Pob" secondAttribute="leading" constant="20" id="oeI-pr-xV1"/>
                                     <constraint firstAttribute="trailing" secondItem="6u0-0W-FIN" secondAttribute="trailing" constant="20" id="ugi-yC-amA"/>
                                     <constraint firstAttribute="bottom" secondItem="6u0-0W-FIN" secondAttribute="bottom" constant="20" id="wv6-T2-TUc"/>

@@ -9,12 +9,13 @@
 #import "RZAppDelegate.h"
 
 #define WINDOW_WIDTH 480
-#define WINDOW_MIN_WIDTH 150
+#define WINDOW_MIN_WIDTH 250
 
 @implementation RZAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
     // Insert code here to initialize your application
     //[[[self settingsOverlay] animator]setAlphaValue:0];
     [[self camOutput]start];
@@ -53,10 +54,13 @@
     //Hurray for reading the documentation!
     [[self window] setContentAspectRatio:[[self camOutput] previewSize]];
     [[self window] setMinSize:NSMakeSize(WINDOW_MIN_WIDTH, WINDOW_MIN_WIDTH * [[self camOutput] aspectRatio])];
+    //[[self window] setMinSize:[self camOutput] min
     
 
     [[self window] setContentSize:NSMakeSize(WINDOW_WIDTH, WINDOW_WIDTH*[[self camOutput] aspectRatio])];
-
+    [[[self settingsOverlay] animator]setAlphaValue:0];
+    /*[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(repopulateInputDevices:) name:AVCaptureDeviceWasConnectedNotification object:nil];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(repopulateInputDevices:) name:AVCaptureDeviceWasDisconnectedNotification object:nil];*/
 }
 - (IBAction)toggleAudio:(id)sender {
     if([audioLoopbackSession isRunning]){
@@ -80,13 +84,14 @@
 - (void)mouseExited:(NSEvent*)evt {
     [[[self settingsOverlay] animator]setAlphaValue:0];
 }
-- (void) repopulateInputDevices {
-    /*[[self inputDevices] removeAllItems];
-    [AVCaptureOutput ]
-    NSArray *captureDevices = [AVCaptureDe devicesWithMediaType:AVMediaTypeAudio];
+- (void) repopulateInputDevices:(NSNotification*)notification {
+    NSLog(@"Woot! input devices changed!");
+    [[self inputDevices] removeAllItems];
+    //[AVCaptureOutput ]
+    NSArray *captureDevices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeAudio];
     for(AVCaptureDevice *device in captureDevices){
         [[self inputDevices] addItemWithTitle:[device localizedName]];
-    }*/
+    }
 }
 - (void) repopulateOutputDevices {
     [[self inputDevices] removeAllItems];
